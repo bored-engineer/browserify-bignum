@@ -1034,7 +1034,7 @@ P['greaterThan'] = P['gt'] = function ( n, b ) {
  * Return true if the value of this BigNumber is greater than or equal to
  * the value of BigNumber(n, b), otherwise returns false.
  */
-P['greaterThanOrEqualTo'] = P['gte'] = P['gt'] = function ( n, b ) {
+P['greaterThanOrEqualTo'] = P['gte'] = function ( n, b ) {
     id = 5;
     return ( b = this['cmp']( n, b ) ) == 1 || b === 0;
 };
@@ -2089,6 +2089,10 @@ P['toString'] = P['toS'] = function ( b ) {
     }
 
     return x['s'] < 0 ? '-' + str : str;
+};
+
+P['toNumber'] = function () {
+  return parseInt(this['toString'](), 10);
 };
 
 
