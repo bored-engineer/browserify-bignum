@@ -5,7 +5,6 @@ A JavaScript implementation of [node-bignum](https://github.com/justmoon/node-bi
 ## Usage
 API functionality should be identical to that of [node-bignum](https://github.com/justmoon/node-bignum). However, a few methods are missing:
 * BigNumber.prime(bits, safe=true)
-* .toNumber()
 * .and(n)
 * .or(n)
 * .xor(n)
